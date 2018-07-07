@@ -79,7 +79,7 @@ ball = {
 	x: 50,
 	y: 50, 
 	r: 5,
-	c: "yellow",
+	c: "pink",
 	vx: 4,
 	vy: 8,
 	
@@ -108,8 +108,8 @@ startBtn = {
 		ctx.font = "18px Arial, sans-serif";
 		ctx.textAlign = "center";
 		ctx.textBaseline = "middle";
-		ctx.fillStlye = "Green";
-		ctx.fillText("Start", W/2, H/2 );
+		ctx.fillStlye = "blue";
+		ctx.fillText("Screw You", W/2, H/2 );
 	}
 };
 
@@ -128,7 +128,7 @@ restartBtn = {
 		ctx.font = "18px Arial, sans-serif";
 		ctx.textAlign = "center";
 		ctx.textBaseline = "middle";
-		ctx.fillStlye = "white";
+		ctx.fillStlye = "Red";
 		ctx.fillText("Restart", W/2, H/2 - 25 );
 	}
 };
