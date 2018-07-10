@@ -109,7 +109,7 @@ startBtn = {
 		ctx.textAlign = "center";
 		ctx.textBaseline = "middle";
 		ctx.fillStlye = "blue";
-		ctx.fillText("Jack Is Dumb, Now start Game", W/2, H/2 );
+		ctx.fillText("Start My GAMES", W/2, H/2 );
 	}
 };
 
