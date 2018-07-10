@@ -109,7 +109,7 @@ startBtn = {
 		ctx.textAlign = "center";
 		ctx.textBaseline = "middle";
 		ctx.fillStlye = "blue";
-		ctx.fillText("Screw You", W/2, H/2 );
+		ctx.fillText("Jack Is Dumb, Now start Game", W/2, H/2 );
 	}
 };
 
@@ -121,7 +121,7 @@ restartBtn = {
 	y: H/2 - 50,
 	
 	draw: function() {
-		ctx.strokeStyle = "green";
+		ctx.strokeStyle = "red";
 		ctx.lineWidth = "2";
 		ctx.strokeRect(this.x, this.y, this.w, this.h);
 		
@@ -129,7 +129,7 @@ restartBtn = {
 		ctx.textAlign = "center";
 		ctx.textBaseline = "middle";
 		ctx.fillStlye = "Red";
-		ctx.fillText("Restart", W/2, H/2 - 25 );
+		ctx.fillText("You failed, Now start over!", W/2, H/2 - 25 );
 	}
 };
 
@@ -150,7 +150,7 @@ function draw() {
 	for(var i = 0; i < paddles.length; i++) {
 		p = paddles[i];
 		
-		ctx.fillStyle = "green";
+		ctx.fillStyle = "yellow";
 		ctx.fillRect(p.x, p.y, p.w, p.h);
 	}
 	
@@ -309,7 +309,7 @@ function emitParticles() {
 		par = particles[j];
 		
 		ctx.beginPath(); 
-		ctx.fillStyle = "white";
+		ctx.fillStyle = "red";
 		if (par.radius > 0) {
 			ctx.arc(par.x, par.y, par.radius, 0, Math.PI*2, false);
 		}
@@ -335,7 +335,7 @@ function updateScore() {
 
 // Function to run when the game overs
 function gameOver() {
-	ctx.fillStlye = "white";
+	ctx.fillStlye = "pink";
 	ctx.font = "20px Arial, sans-serif";
 	ctx.textAlign = "center";
 	ctx.textBaseline = "middle";
